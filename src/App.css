@@ -82,3 +82,8 @@
 	font-weight: 400;
 	color: #424140;
 }
+
+.StripeCheckout {
+	margin-top: 35px;
+	float: right;
+}

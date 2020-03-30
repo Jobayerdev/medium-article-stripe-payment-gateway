@@ -1,25 +1,19 @@
 import React, { useState } from "react";
+import StripeButton from "../components/StripeButton";
 
 const CheckOutPage = () => {
 	const [cart, setCart] = useState([
 		{
 			id: 1,
-			name: "Brown Brim",
-			imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+			name: "Gxon Tree",
+			imageUrl: "https://i.ibb.co/qrKdbv4/Screenshot-1.png",
 			qty: 2,
 			price: 25
 		},
 		{
 			id: 2,
-			name: "Blue Beanie",
-			imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-			qty: 8,
-			price: 18
-		},
-		{
-			id: 2,
-			name: "Blue Beanie",
-			imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+			name: "Mirogo Sap",
+			imageUrl: "https://i.ibb.co/6YrtQ5W/Screenshot-2.png",
 			qty: 8,
 			price: 18
 		}
@@ -60,6 +54,7 @@ const CheckOutPage = () => {
 				))}
 			</div>
 			<div className="total">Total : ${total}</div>
+			<StripeButton totalAmount={total} />
 		</div>
 	);
 };
